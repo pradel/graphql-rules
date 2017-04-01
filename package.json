@@ -1,7 +1,7 @@
 {
   "name": "graphql-rules",
   "description": "Utility allowing you to write rules for your graphql resolvers.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Leo Pradel",
   "scripts": {
     "build": "babel src --out-dir lib",
