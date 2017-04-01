@@ -1,4 +1,4 @@
-# graphql-resolvers-rules
+# graphql-rules
 
 A little utility allowing you to write rules for your graphql resolvers.
 

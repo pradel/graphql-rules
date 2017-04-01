@@ -1,15 +1,35 @@
 {
+  "name": "graphql-rules",
+  "description": "Utility allowing you to write rules for your graphql resolvers.",
+  "version": "0.0.0",
+  "author": "Leo Pradel",
   "scripts": {
+    "build": "babel src --out-dir lib",
     "testonly": "jest",
-    "lint": "eslint .",
-    "test": "npm run lint && npm run testonly"
+    "lint": "eslint src __tests__",
+    "test": "npm run lint && npm run testonly && npm run build"
   },
+  "main": "lib/index.js",
+  "keywords": [
+    "graphql",
+    "rules",
+    "resolvers"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradel/graphql-rules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pradel/graphql-rules/issues"
+  },
+  "homepage": "https://github.com/pradel/graphql-rules#readme",
   "dependencies": {
-    "babel-preset-es2015": "^6.24.0",
     "jest": "next",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-3": "^6.22.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
