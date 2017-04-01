@@ -43,5 +43,14 @@ const resolverMap = {
       },
     }),
   },
+  Mutation: {
+    addSomeDbObject: graphqlRules.check({
+      // Check the user is logged
+      rules: 'is-logged',
+      resolver: (obj, args, context) => {
+        return MyModel.insert(context.obj);
+      },
+    }),
+  },
 };
 ```
